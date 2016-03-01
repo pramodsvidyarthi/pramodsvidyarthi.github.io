@@ -159,6 +159,11 @@ section:last-child {
 	margin-bottom: 3px;
 }
 
+ .printkeySkills {
+	 display: none;
+ }
+
+
 @media all and (min-width: 602px) and (max-width: 800px) {
 	#headshot {
 		display: none;
@@ -235,6 +240,36 @@ section:last-child {
     #cv {
         width: 100%;
     }
+
+		#social-links, #headshot {
+			display: none;
+		}
+
+		#contactDetails{
+			margin-top: 12px;
+		}
+
+		.keySkills {
+			display: none;
+		}
+
+		/* For portrait print */
+		.sectionTitle {
+			margin-bottom: 0.8rem;
+		}
+
+		.printkeySkills {
+			display: block;
+			margin-bottom: 20px;
+		}
+
+		.printkeySkills li{
+			display: inline-block;
+			list-style-type: none;
+			width: 49%;
+			font-size: 1em;
+			color: #444;
+		}
 }
 
 @-webkit-keyframes reset {
