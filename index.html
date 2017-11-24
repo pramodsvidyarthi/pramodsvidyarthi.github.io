@@ -1,172 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>pramod's - Curriculum Vitae</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./resets.css">
+  <title>CV</title>
+  <style>
+    .container {
+      display: grid;
+      grid-gap: 10px;
+      width: 80%;
+      margin: auto;
+      height: 100vh;
+      grid-template-areas: "header header" "aside article";
+      grid-template-rows: 100px 1fr;
+      grid-template-columns: 1fr 4fr;
+    }
 
-<meta name="viewport" content="width=device-width"/>
-<meta name="description" content="The Curriculum Vitae of Pramod."/>
-<meta charset="UTF-8">
+    header {
+      grid-area: header;
+      display: grid;
+      grid-template-columns: 6fr 1fr;
+    }
 
-<link href='https://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<link type="text/css" rel="stylesheet" href="style.css">
+    header #left * {
+      padding: 2px;
+    }
 
-<!--[if lt IE 9]>
-<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
+    header #right{
+      display: flex;
+      align-self: center;
+      justify-content: center;
+    }
+
+    header #left #email,
+    header #left #phone {
+      display: inline-flex;
+      width: 40%;
+    }
+
+    header #left h1 { font-size: 24px; }
+    header #left h3 { font-size: 18px; }
+
+    article {
+      grid-area: article;
+    }
+
+    aside {
+      grid-area: aside;
+    }
+  </style>
 </head>
-<body id="top">
-<div id="cv" class="instaFade">
-	<div class="mainDetails">
-		<div id="headshot" class="quickFade">
-			<img src="http://lh5.googleusercontent.com/-eMsIbrdOV9s/AAAAAAAAAAI/AAAAAAAAAb4/zzniF79mwFQ/s200-c-k-no/photo.jpg" alt="pramod vidyarthi" />
-			<!-- <img src="headshot.jpg" alt="pramod vidyarthi" /> -->
-		</div>
 
-		<div id="name">
-			<h1 class="quickFade delayTwo">Pramod Vidyarthi S</h1>
-			<h2 class="quickFade delayThree">Front End Developer</h2>
-		</div>
-
-		<div id="contactDetails" class="quickFade delayFour">
-			<!-- <ul>
-				<li><a href="https://twitter.com/pramodvidyarthi" title="Follow me at twitter" class="twitter"></a></li>
-				<li><a href="https://github.com/pramodsvidyarthi" title="Follow me at github" class="github"></a></li>
-				<li><a href="https://plus.google.com/u/0/101598127487333104285/posts" title="Follow me at googleplus" class="googleplus"></li>
-			</ul> -->
-			<ul>
-				<li><i class="fa fa-phone"></i> +91-7760616039</li>
-				<li><i class="fa fa-envelope-o"></i> <a href="mailto:joe@bloggs.com" target="_blank">pramodsvidyarthi@gmail.com</a></li>
-				<!-- <li>w: <a href="http://www.bloggs.com">pramodsvidyarthi.github.io</a></li> -->
-			</ul>
-			<ul id="social-links">
-				<li style="margin-right: 10px;"><a href="https://twitter.com/pramodvidyarthi" title="Follow me at twitter" class="twitter"><i class="fa fa-twitter-square fa-2x"></i></a></li>
-				<li><a href="https://github.com/pramodsvidyarthi" title="Follow me at github" class="twitter"><i class="fa fa-github-square fa-2x"></i></a></li>
-			</ul>
-		</div>
-		<div class="clear"></div>
-	</div>
-
-	<div id="mainArea" class="quickFade delayFive">
-		<section>
-			<article>
-				<div class="sectionTitle">
-					<h1>Personal Profile</h1>
-				</div>
-
-				<div class="sectionContent">
-					<p>
-						Hi, I'm pramod, an aspiring and enthusiastic UI/Frontend developer who has enjoyed
-					  developing websites and web-applications based on webstandard technologies like HTML5, CSS, JavaScript.
-						Im focused about improvising my skills and emphasize code quality as much as ever.
-						Im excited about what the future holds for technology and determined to embrace and adapt.
-					</p>
-				</div>
-			</article>
-			<div class="clear"></div>
-		</section>
-
-
-		<section>
-			<div class="sectionTitle">
-				<h1>Work Experience</h1>
-			</div>
-
-			<div class="sectionContent">
-				<article>
-					<h2>Xpitax India Private Limited</h2>
-					<p class="subDetails">June 2014 - Present</p>
-					<p>
-						At Xpitax, an XCM Solutions company, the leader in developing offshore outsourcing solutions for the taxation industry, i was a part of creative team incharge of redeveloping the application
-						using HTML5/CSS3, semantic-ui, Backbone.js, jquery and other high performant modular javascript  libraries. I worked with the entire team focusing more on the user interface front and programmed
-						modules of the application to improve and optimize performance.
-					</p>
-				</article>
-
-				<article>
-					<h2>Xpitax India Private Limited (Internship)</h2>
-					<p class="subDetails">February 2014 - June 2014</p>
-					<p>
-						As an intern i was closely working with the team to assist in creating elegant and fast web application and also worked closely
-						with the backend team in the assessment of database. I was responsible for converting raw images and layouts or PSD files into
-						HTML themes and prototypes.
-					</p>
-				</article>
-			</div>
-			<div class="clear"></div>
-		</section>
-
-
-		<section>
-			<div class="sectionTitle">
-				<h1>Key Skills</h1>
-			</div>
-
-			<div class="sectionContent">
-				<ul class="keySkills">
-					<li>Html</li>
-					<li>Css</li>
-					<li>javascript</li>
-					<li>Sass</li>
-					<li>jQuery</li>
-					<li>Backbone.js</li>
-					<li>D3.js</li>
-					<li>Node.js</li>
-					<li>Gulp</li>
-					<li>Grunt</li>
-					<li>Git</li>
-					<li>REST</li>
-				</ul>
-				<ul class="printkeySkills">
-					<li>Html</li>
-					<li>Css</li>
-					<li>javascript</li>
-					<li>Sass</li>
-					<li>jQuery</li>
-					<li>Backbone.js</li>
-					<li>D3.js</li>
-					<li>Node.js</li>
-					<li>Gulp</li>
-					<li>Grunt</li>
-					<li>Git</li>
-					<li>REST</li>
-				</ul>
-			</div>
-			<div class="clear"></div>
-		</section>
-
-
-		<section>
-			<div class="sectionTitle">
-				<h1>Education</h1>
-			</div>
-
-			<div class="sectionContent">
-				<article>
-					<h2>Master Of Computer Applications</h2>
-					<p class="subDetails">The Oxford College Of Engineering</p>
-					<p>Visvesvaraya Technological University</p>
-				</article>
-
-				<article>
-					<h2>Bachelor Of Computer Applications</h2>
-					<p class="subDetails">Vijaya College Jayanagar</p>
-					<p>Bangalore University</p>
-				</article>
-			</div>
-			<div class="clear"></div>
-		</section>
-
-	</div>
-</div>
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-var pageTracker = _gat._getTracker("UA-3753241-1");
-pageTracker._initData();
-pageTracker._trackPageview();
-</script>
+<body>
+  <div class="container">
+    <header>
+      <div id="left">
+        <div id="name">
+          <h1>Pramod Vidyarthi S</h1>
+        </div>
+        <div id="designation">
+          <h3>Front-End Developer</h3>
+        </div>
+        <div id="phone">&#9990; +91-7760616039</div>
+        <div id="email">&#9993; pramodsvidyarthi@gmail.com</div>
+        <div id="link">coming soon</div>
+      </div>
+      <div id="right">
+        <div id="image">
+          <img width="75" height="75" src="/headshot.jpg" alt="coming soon">
+        </div>
+      </div>
+    </header>
+    <aside>Aside</aside>
+    <article>Article</article>
+  </div>
 </body>
+
 </html>
