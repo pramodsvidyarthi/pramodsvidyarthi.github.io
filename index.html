@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">  
   <link rel="stylesheet" href="./resets.css">
   <title>CV</title>
   <style>
@@ -29,16 +30,33 @@
       padding: 2px;
     }
 
+    header #left {
+      display: block;
+      align-self: center;
+      margin: auto 5px;
+    }
+
     header #right{
       display: flex;
       align-self: center;
       justify-content: center;
+      margin: auto 5px;
     }
 
-    header #left #email,
+    header #left #link,
     header #left #phone {
       display: inline-flex;
+      width: 25%;
+    }
+
+    header #left #email {
+      display: inline-flex;
       width: 40%;
+    }
+
+    header #left #link a {
+      color: inherit;
+      margin: auto 5px;
     }
 
     header #left h1 { font-size: 24px; }
@@ -64,9 +82,17 @@
         <div id="designation">
           <h3>Front-End Developer</h3>
         </div>
-        <div id="phone">&#9990; +91-7760616039</div>
-        <div id="email">&#9993; pramodsvidyarthi@gmail.com</div>
-        <div id="link">coming soon</div>
+        <div id="phone">
+          <i class="fa fa-phone" aria-hidden="true"></i> +91-7760616039
+        </div>
+        <div id="email">
+          <i class="fa fa-envelope" aria-hidden="true"></i>pramodsvidyarthi@gmail.com
+        </div>
+        <div id="link">
+          <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+        </div>
       </div>
       <div id="right">
         <div id="image">
