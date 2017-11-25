@@ -5,103 +5,114 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./resets.css">
+  <link rel="stylesheet" href="./styles.css">
   <title>CV</title>
-  <style>
-    .container {
-      display: grid;
-      grid-gap: 10px;
-      width: 80%;
-      margin: auto;
-      height: 100vh;
-      grid-template-areas: "header header" "aside article";
-      grid-template-rows: 100px 1fr;
-      grid-template-columns: 1fr 4fr;
-    }
-
-    header {
-      grid-area: header;
-      display: grid;
-      grid-template-columns: 6fr 1fr;
-    }
-
-    header #left * {
-      padding: 2px;
-    }
-
-    header #left {
-      display: block;
-      align-self: center;
-      margin: auto 5px;
-    }
-
-    header #right{
-      display: flex;
-      align-self: center;
-      justify-content: center;
-      margin: auto 5px;
-    }
-
-    header #left #link,
-    header #left #phone {
-      display: inline-flex;
-      width: 25%;
-    }
-
-    header #left #email {
-      display: inline-flex;
-      width: 40%;
-    }
-
-    header #left #link a {
-      color: inherit;
-      margin: auto 5px;
-    }
-
-    header #left h1 { font-size: 24px; }
-    header #left h3 { font-size: 18px; }
-
-    article {
-      grid-area: article;
-    }
-
-    aside {
-      grid-area: aside;
-    }
-  </style>
 </head>
 
 <body>
   <div class="container">
     <header>
       <div id="left">
-        <div id="name">
+        <div id="name" class="heading">
           <h1>Pramod Vidyarthi S</h1>
         </div>
         <div id="designation">
           <h3>Front-End Developer</h3>
         </div>
         <div id="phone">
-          <i class="fa fa-phone" aria-hidden="true"></i> +91-7760616039
+          <i class="icon fa fa-phone" aria-hidden="true"></i> +91-7760616039
         </div>
         <div id="email">
-          <i class="fa fa-envelope" aria-hidden="true"></i>pramodsvidyarthi@gmail.com
+          <i class="icon fa fa-envelope" aria-hidden="true"></i>pramodsvidyarthi@gmail.com
         </div>
         <div id="link">
-          <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-          <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-          <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a href="#">
+            <i class="icon fa fa-linkedin-square" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <i class="icon fa fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <i class="icon fa fa-github" aria-hidden="true"></i>
+          </a>
         </div>
       </div>
       <div id="right">
         <div id="image">
-          <img width="75" height="75" src="/headshot.jpg" alt="coming soon">
+          <img width="75" height="75" src="https://cdn.hashnode.com/res/hashnode/image/upload/w_200,h_200,c_thumb/e4ubiikiw11kwxty9wij_cropped/1502865371.png"
+            alt="coming soon">
         </div>
       </div>
     </header>
-    <aside>Aside</aside>
-    <article>Article</article>
+    <article>
+      <section id="summary">
+        <h3 class="title heading">SUMMARY</h3>
+        <p class="content">I am an aspiring Front-End Web Developer motivated about combining the art of design with the art of programming.
+          I seek to uplift my skills and emphasize code quality as much as ever. I am enthusiastic about what the future
+          holds for technology and determined to embrace and adapt.</p>
+      </section>
+    </article>
+    <aside>
+      <section id="experience">
+        <h3 class="title heading">EXPERIENCE</h3>
+        <div class="content">
+          <div class="job-experience">
+            <h5 class="position">UI Developer</h5>
+            <div class="company">
+              <b>Optym Inida Private Limited</b>
+            </div>
+            <span class="duration">
+              <i class="icon fa fa-calendar"></i> 07/2016 - Ongoing</span>
+            <span class="location">
+              <i class="icon fa fa-map-marker"></i> Bangalore</span>
+            <div class="description">
+              Optym builds decision automation and optimization solutions in the field of logistics and transportation.
+            </div>
+          </div>
+          <div class="job-experience">
+            <h5 class="position">Software Engineer</h5>
+            <div class="company">
+              <b>Xpitax India Private Limited</b>
+            </div>
+            <span class="duration">
+              <i class="icon fa fa-calendar"></i> 07/2014 - 07-2016</span>
+            <span class="location">
+              <i class="icon fa fa-map-marker"></i> Bangalore</span>
+            <div class="description">
+              Xpitax, an XCM Solutions company, is the leader in developing offshore outsourcing solutions for the taxation industry. </div>
+          </div>
+        </div>
+      </section>
+      <section id="education">
+        <h3 class="title heading">Education</h3>
+        <div class="content">
+          <div class="qualification">
+            <h5 class="degree">Master Of Computer Application</h5>
+            <div class="college">The Oxford College Of Engineering</div>
+            <div class="university">Visvesvaraya Technological University</div class="university">
+            <span class="duration">
+                <i class="icon fa fa-calendar"></i> 2011 - 2014
+            </span>
+              <span class="location">
+                <i class="icon fa fa-map-marker"></i> Bangalore
+            </span>
+          </div>
+          <div class="qualification">
+              <h5 class="degree">Bachelor Of Computer Applications</h5>
+              <div class="college">Vijaya College Jayanagar</div>
+              <div class="university">Bangalore University</div class="university">
+              <span class="duration">
+                  <i class="icon fa fa-calendar"></i> 2008 - 2011
+              </span>
+                <span class="location">
+                  <i class="icon fa fa-map-marker"></i> Bangalore
+              </span>
+            </div>
+        </div>
+      </section>
+    </aside>
   </div>
 </body>
 

@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow');
+
+body {
+  background-color: #0B0C10;
+  color: #1F2A33;
+  font-family: 'Barlow', sans-serif;
+  font-size: 16px;
+  line-height: 17px;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+.icon{
+  color: #659DBD;
+}
+
+.heading {
+  color: #E27D60;
+}
+
+.container {
+  display: grid;
+  grid-gap: 5px;
+  max-width: 800px;
+  width: 100%;
+  margin: 10px auto;
+  min-height: calc(100vh - 20px);
+  height: 100%;
+  background-color: #E3E2DF;
+  grid-template-areas: "header header" "article aside";
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 5fr 3.5fr;
+}
+
+header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 6fr 1fr;
+  border-bottom: 1px solid #E8A87C;
+  padding: 5px;
+}
+
+header #left * {
+  padding: 2px;
+  margin-bottom: 2px;
+}
+
+header #left {
+  display: block;
+  align-self: center;
+  margin: auto 5px;
+}
+
+header #right {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  margin: auto 5px;
+}
+
+header #left #link,
+header #left #phone {
+  display: inline-flex;
+  width: 25%;
+}
+
+header #left #email {
+  display: inline-flex;
+  width: 40%;
+}
+
+header #left #link a {
+  color: inherit;
+  margin: auto 5px;
+}
+
+header #image img {
+  border-radius: 50%;
+}
+
+article {
+  grid-area: article;
+  padding: 5px 15px;
+}
+
+aside {
+  grid-area: aside;
+  padding: 5px 15px;
+}
+
+aside section:not(:first-child),
+article section:not(:first-child) {
+  margin-top: 20px;
+}
+
+aside section .content,
+article section .content {
+  margin: 10px auto;
+  text-align: left;
+}
+
+aside section .content .qualification,
+aside section .content .job-experience {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+aside section .content * {
+  margin-bottom: 5px;
+}
+
+aside section .content .qualification .degree,
+aside section .content .job-experience .position {
+  font-weight: bold;
+  color: #41B3A3;
+  letter-spacing: 0.5px;
+}
+
+aside section .content .duration,
+aside section .content .location {
+  font-size: 14px;
+}
+
+aside section .content .job-experience .location {
+  margin-left: 7px;
+}
