@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Barlow');
+@import url('https://fonts.googleapis.com/css?family=Barlow:400,700');
 
 body {
   background-color: #0B0C10;
@@ -26,6 +26,10 @@ h4 {
 
 h5 {
   font-size: 18px;
+}
+
+b {
+  font-weight: bold;
 }
 
 .icon{
@@ -117,28 +121,39 @@ article section .content {
   text-align: left;
 }
 
+article section .content .project-worked,
 aside section .content .qualification,
 aside section .content .job-experience {
   margin-top: 10px;
   margin-bottom: 15px;
 }
 
+article section .content *,  
 aside section .content * {
   margin-bottom: 5px;
 }
 
 aside section .content .qualification .degree,
 aside section .content .job-experience .position {
-  font-weight: bold;
   color: #41B3A3;
   letter-spacing: 0.5px;
 }
 
-aside section .content .duration,
-aside section .content .location {
+section .content .company,
+section .content .client,
+section .content .role,
+section .content .tools,
+section .content .duration,
+section .content .location {
   font-size: 14px;
 }
 
 aside section .content .job-experience .location {
   margin-left: 7px;
+}
+
+aside #skills .content .skill {
+  padding: 10px;
+  border: 1px solid #333333;
+  display: inline-block;
 }
