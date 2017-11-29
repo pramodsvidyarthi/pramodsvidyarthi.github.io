@@ -49,7 +49,7 @@ b {
   min-height: calc(100vh - 20px);
   height: 100%;
   background-color: #E3E2DF;
-  grid-template-areas: "header header" "article aside";
+  grid-template-areas: "header header" "article aside" "footer footer";
   grid-template-rows: auto 1fr;
   grid-template-columns: 5fr 3.5fr;
 }
@@ -100,6 +100,11 @@ header #image img {
   border-radius: 50%;
 }
 
+section#skills {
+  grid-area: footer;
+  padding: 5px 15px;
+}
+
 article {
   grid-area: article;
   padding: 5px 15px;
@@ -115,6 +120,7 @@ article section:not(:first-child) {
   margin-top: 20px;
 }
 
+section#skills .content,
 aside section .content,
 article section .content {
   margin: 10px auto;
@@ -128,6 +134,7 @@ aside section .content .job-experience {
   margin-bottom: 15px;
 }
 
+section#skills .content *,
 article section .content *,  
 aside section .content * {
   margin-bottom: 5px;
@@ -152,8 +159,13 @@ aside section .content .job-experience .location {
   margin-left: 7px;
 }
 
-aside #skills .content .skill {
+aside #education {
+  margin-top: 40px;
+}
+
+#skills .content .skill {
   padding: 10px;
   border: 1px solid #333333;
   display: inline-block;
+  font-size: 14px;
 }
