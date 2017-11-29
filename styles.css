@@ -50,7 +50,7 @@ b {
   height: 100%;
   background-color: #E3E2DF;
   grid-template-areas: "header header" "article aside" "footer footer";
-  grid-template-rows: auto 1fr;
+  /* grid-template-rows: auto auto auto; */
   grid-template-columns: 5fr 3.5fr;
 }
 
@@ -168,4 +168,32 @@ aside #education {
   border: 1px solid #333333;
   display: inline-block;
   font-size: 14px;
+}
+
+@media screen and (max-width: 650px) {
+  .container {
+    grid-template-areas: "header" "article" "aside" "footer";
+    /* grid-template-rows: auto auto auto; */
+    grid-template-columns: auto;
+  }
+
+  div#left #phone,
+  div#left #email,
+  div#left #link {
+    width: 100%;
+  }
+
+  div#left #link a:first-child {
+    margin-left: 0;
+  }
+}
+
+@media print {
+  section#skills {
+    padding-top: 0px;
+    margin-top: -20px;
+  }
+  @page {
+    size: auto;
+  }
 }
